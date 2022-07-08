@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    @post.update(views: @post.views + 1) # it will increment views by 1 everytime we go to show post
   end
 
   # GET /posts/new
