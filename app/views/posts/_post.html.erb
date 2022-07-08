@@ -4,7 +4,7 @@
   </h2>
 
   <h5>
-    Posted by:<%= post.user.email %>
+    Posted by:<%= link_to post.user.name, user_path(post.user) %>
   </h5>
   <h6><%= pluralize(post.views, "view") %></h6>
   <div>
